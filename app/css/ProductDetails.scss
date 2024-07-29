@@ -1,0 +1,595 @@
+.ProductDetails {
+  > div {
+    @media (max-width: 1300px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 500px) {
+      padding: 0px;
+    }
+    > header {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      @media (max-width: 1300px) {
+        padding: 0 20px;
+      }
+      > h1 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 145%;
+        color: #1d1d1d;
+        @media (max-width: 700px) {
+          font-size: 30px;
+        }
+        @media (max-width: 450px) {
+          font-size: 20px;
+        }
+      }
+      > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0 15px 0;
+        border-bottom: solid 1px black;
+        @media (max-width: 900px) {
+          flex-direction: column;
+        }
+        .ProductDetails_favorite_wrap {
+          display: flex;
+          p {
+            display: flex;
+            align-items: center;
+          }
+          > img {
+            margin-right: 8px;
+          }
+          p {
+            width: 140px;
+          }
+        }
+        > div {
+          display: flex;
+          width: auto;
+          p {
+            margin-left: 30px;
+          }
+          p {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #1d1d1d86;
+            // width: 200px;
+            @media (max-width: 450px) {
+              font-size: 10px;
+            }
+          }
+        }
+        .ProductDetails__header__second-wrap {
+          @media (max-width: 900px) {
+            margin-top: 10px;
+            p {
+              margin: 0 30px 0 0;
+            }
+          }
+          @media (max-width: 450px) {
+            p {
+              margin: 0 10px 0 0;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+    > main {
+      padding: 24px 0;
+      > .ProductDetails__first-section {
+        display: flex;
+        min-height: 650px;
+        height: auto;
+        @media (max-width: 1100px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        > main {
+          display: flex;
+          @media (max-width: 1300px) {
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            // align-items: ;
+          }
+          > ul {
+            height: 626px;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            @media (max-width: 1300px) {
+              flex-direction: row;
+              height: auto;
+              width: 590px;
+            }
+            @media (max-width: 600px) {
+              width: 400px;
+              margin-top: 20px;
+            }
+            @media (max-width: 400px) {
+              width: 300px;
+            }
+
+            > li {
+              border-radius: 20px;
+              width: 180px;
+              height: 180px;
+              margin-bottom: 40px;
+
+              @media (max-width: 1300px) {
+                margin-bottom: 0;
+                margin-right: 20px;
+              }
+              @media (max-width: 400px) {
+                margin-right: 25px;
+              }
+
+              &:last-child {
+                margin-bottom: 0px;
+              }
+
+              > img {
+                height: 100%;
+                width: 100%;
+                cursor: zoom-in;
+                border-radius: 20px;
+                width: 180px;
+                height: 180px;
+                @media (max-width: 600px) {
+                  width: 120px;
+                  height: 120px;
+                }
+                @media (max-width: 400px) {
+                  width: 80px;
+                  height: 80px;
+                }
+              }
+            }
+          }
+          > .ProductDetails__first-section__main-img {
+            border-radius: 20px;
+            width: 620px;
+            height: 626px;
+            margin: 0 40px 0 40px;
+            position: relative;
+            @media (max-width: 1300px) {
+              width: 590px;
+              margin: 0;
+            }
+            @media (max-width: 600px) {
+              width: 400px;
+              height: auto;
+            }
+            @media (max-width: 400px) {
+              width: 300px;
+            }
+            > img {
+              height: 100%;
+              width: 100%;
+              border-radius: 20px;
+              cursor: pointer;
+              @media (max-width: 600px) {
+                width: 400px;
+                height: auto;
+              }
+              @media (max-width: 400px) {
+                width: 300px;
+              }
+            }
+            > div {
+              position: absolute;
+              left: 0px;
+              top: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 62px;
+              > div {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                height: 28px;
+                width: 114px;
+                color: white;
+                font-family: "Ubuntu", sans-serif;
+                background: rgba(97, 140, 120, 1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+        > .ProductDetails__first-section__inf {
+          height: 100%;
+          width: 400px;
+          @media (max-width: 1300px) {
+            margin-left: 20px;
+          }
+          @media (max-width: 1100px) {
+            // margin-left: 20px;
+            width: 590px;
+            margin: 20px 0 0 0;
+          }
+          @media (max-width: 600px) {
+            width: 400px;
+          }
+          @media (max-width: 400px) {
+            width: 300px;
+          }
+          > header {
+            div {
+              > p {
+                font-family: "Ubuntu", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: rgba(28, 28, 28, 0.5);
+              }
+              h6 {
+                font-family: "Ubuntu", sans-serif;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 145%;
+                color: #1d1d1d;
+              }
+            }
+            > .ProductDetails__first-section__inf__old-price {
+              > h6 {
+                font-size: 28px;
+                color: gray;
+                text-decoration: line-through;
+              }
+            }
+          }
+          > main {
+            margin-top: 30px;
+            > div {
+              > p {
+                font-family: "Ubuntu", sans-serif;
+              }
+              display: flex;
+              border: solid 1px green;
+            }
+            > footer {
+              display: flex;
+              margin-top: 30px;
+              > button {
+                border-radius: 10px;
+                width: 290px;
+                height: 51px;
+                background: #cb4a4a;
+                font-family: "Ubuntu", sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 140%;
+                text-align: center;
+                color: #fcfcfc;
+                transition: 300ms;
+                &:hover {
+                  background: rgba(170, 55, 55, 1);
+                }
+                &:active {
+                  transform: scale(1.1);
+                }
+              }
+              > div {
+                margin-left: 40px;
+                border: 1px solid #1d1d1d;
+                border-radius: 10px;
+                width: 51px;
+                height: 51px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 300ms;
+                &:active {
+                  transform: scale(1.1);
+                }
+                &:hover {
+                  background: rgba(203, 74, 74, 1);
+                  border: solid 1px rgba(203, 74, 74, 1);
+                  .favorit-black {
+                    opacity: 0;
+                  }
+                  .favorit-white {
+                    opacity: 1;
+                  }
+                }
+                > div {
+                  position: relative;
+                  height: 24px;
+                  width: 24px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  > .favorit-black {
+                    position: relative;
+                    z-index: 3;
+                    opacity: 1;
+                    transition: 300ms;
+                  }
+                  > .favorit-white {
+                    position: absolute;
+                    z-index: 1;
+                    opacity: 0;
+                  }
+                }
+              }
+            }
+          }
+          > footer {
+            width: 399px;
+            height: 103px;
+            box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 32px;
+            > div {
+              font-family: "Ubuntu", sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 140%;
+              color: #7d7d7d;
+              display: flex;
+              align-items: center;
+              > img {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .ProductDetails__footer__desktop {
+      @media (max-width: 500px) {
+        display: none;
+      }
+      > header {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #fcfcfc;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        > div {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 140%;
+          text-align: center;
+          color: black;
+          width: 33.3%;
+          background: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: 300ms;
+          border-bottom: 1.5px solid black;
+          &:hover {
+            color: #618c78;
+          }
+        }
+        .active {
+          background: #618c78;
+          color: white;
+          border-bottom: 1.5px solid #618c78;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+      .ProductDetails__characteristics {
+        //
+        > div {
+          border-bottom: solid 1px black;
+          display: flex;
+          align-items: center;
+          width: 500px;
+          height: 57px;
+          &:last-child {
+            border-bottom: none;
+          }
+          > p {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            color: #1d1d1d;
+            width: 50%;
+          }
+          > div {
+            width: 50%;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #1d1d1d;
+          }
+        }
+      }
+      > main {
+        margin-bottom: 30px;
+      }
+      .ProductDetails__reviews {
+        //
+      }
+      .ProductDetails__make-review {
+        //
+        display: flex;
+        flex-direction: column;
+        > textarea {
+          height: 100px;
+          width: 300px;
+          border: solid 1px rgba(0, 0, 0, 0.4);
+          resize: none;
+          margin-top: 10px;
+          padding: 5px;
+          font-family: "Ubuntu", sans-serif;
+        }
+        > button {
+          margin-top: 10px;
+          width: 200px;
+          height: 51px;
+          border-radius: 10px;
+          background: #cb4a4a;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 140%;
+          text-align: center;
+          color: #fcfcfc;
+          transition: 300ms;
+          &:hover {
+            background: rgba(170, 55, 55, 1);
+          }
+          &:active {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    > .ProductDetails__footer__mobile {
+      display: none;
+      @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+      }
+      > div {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px black solid;
+        margin-bottom: 10px;
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 10px;
+          height: 30px;
+          cursor: pointer;
+          transition: 300ms;
+          &:hover {
+            background: #618c78;
+            > h4 {
+              color: white;
+            }
+          }
+          > h4 {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Ubuntu", sans-serif;
+            color: #618c78;
+          }
+        }
+        > main {
+          padding: 0 10px;
+          height: 0px;
+          overflow: hidden;
+          > div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            border-bottom: rgba(0, 0, 0, 0.3) 1px solid;
+            padding: 5px 0;
+            &:last-child {
+              border: none;
+            }
+            > p {
+              font-family: "Ubuntu", sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 145%;
+              color: #1d1d1d;
+              font-weight: 700;
+            }
+            > div {
+              font-family: "Ubuntu", sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 145%;
+              color: #1d1d1d;
+            }
+          }
+          > textarea {
+            height: 100px;
+            width: 300px;
+            border: solid 1px rgba(0, 0, 0, 0.4);
+            resize: none;
+            margin-top: 10px;
+            padding: 5px;
+            font-family: "Ubuntu", sans-serif;
+          }
+          > button {
+            margin-top: 10px;
+            width: 200px;
+            height: 51px;
+            border-radius: 10px;
+            background: #cb4a4a;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            text-align: center;
+            color: #fcfcfc;
+            transition: 300ms;
+            margin-bottom: 5px;
+            &:hover {
+              background: rgba(170, 55, 55, 1);
+            }
+            &:active {
+              transform: scale(1.1);
+            }
+          }
+        }
+        .active {
+          height: auto !important;
+        }
+      }
+    }
+    .ProductDetails__slider {
+      padding: 20px 0 40px 0;
+      > h6 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 145%;
+        color: #1d1d1d;
+        margin-bottom: 40px;
+        @media (max-width: 430px) {
+          margin-bottom: 50px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  > .loading_img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    > img {
+      height: 220px;
+      width: 220px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "./css/resetDefault.scss";
+@import "./css/Header.scss";
+@import "./css/Footer.scss";
+@import "./css/ProductCard.scss";
+@import "./css/Home.scss";
+@import "./css/Slider.scss";
+@import "./css/ProductDetails.scss";
+@import "./css/Rating.scss";
+@import "./css/Catalog.scss";
+@import "./css/Profile.scss";
+@import "./css/SignIn.scss";
+@import "./css/Registration.scss";
+@import "./css/Cart.scss";
+@import "./css/Counter.scss";
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: auto;
+  max-width: 1280px;
+}
+
+.cloth-btn {
+  min-height: 20px;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &:hover {
+    > div {
+      background: #618c78;
+    }
+  }
+  > div {
+    height: 2px;
+    width: 100%;
+    background: black;
+    position: absolute;
+  }
+  > div:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  > div:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+}
+
+.display_none {
+  display: none !important;
+}

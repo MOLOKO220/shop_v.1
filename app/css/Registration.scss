@@ -1,0 +1,54 @@
+.Registration {
+  height: calc(100vh - 380px);
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    > h1 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    > input {
+      font-family: "Ubuntu", sans-serif;
+      border: solid 1px black;
+      height: 30px;
+      width: 300px;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .Registration__response-board {
+      width: 100%;
+      border-radius: 5px;
+      height: 20px;
+      margin: 5px 0;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      transition: 400ms;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: rgb(1, 175, 1);
+    }
+    > button {
+      font-family: "Ubuntu", sans-serif;
+      border-radius: 15px;
+      width: 300px;
+      height: 30px;
+      background: rgba(97, 140, 120, 1);
+      color: white;
+      font-size: 14px;
+    }
+  }
+}

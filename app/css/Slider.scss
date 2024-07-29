@@ -1,0 +1,97 @@
+.SliderWrap {
+  .slick-slider {
+    position: relative;
+    .slick-track {
+      display: flex;
+      justify-content: center;
+      height: 600px;
+      overflow: hidden;
+      margin-left: 15px;
+      @media (max-width: 1265px) {
+        margin-left: 55px;
+      }
+      @media (max-width: 1085px) {
+        margin-left: 35px;
+      }
+      @media (max-width: 1000px) {
+        margin-left: 15px;
+      }
+      @media (max-width: 935px) {
+        margin-left: 85px;
+      }
+      @media (max-width: 850px) {
+        margin-left: 55px;
+      }
+      @media (max-width: 770px) {
+        margin-left: 30px;
+      }
+      @media (max-width: 670px) {
+        margin-left: 15px;
+      }
+      @media (max-width: 630px) {
+        margin-left: 150px;
+      }
+      @media (max-width: 540px) {
+        margin-left: 120px;
+      }
+      @media (max-width: 500px) {
+        margin-left: 90px;
+      }
+      @media (max-width: 450px) {
+        margin-left: 60px;
+      }
+      @media (max-width: 390px) {
+        margin-left: 40px;
+      }
+      @media (max-width: 360px) {
+        margin-left: 30px;
+      }
+      @media (max-width: 340px) {
+        margin-left: 20px;
+      }
+      .slick-slide {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .slick-dots {
+      display: none !important;
+    }
+    .slick-arrow {
+      position: absolute;
+      top: -40px;
+      height: 0px !important;
+      width: 0px !important;
+      font-size: 0;
+      &::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        background: rgba(242, 242, 242, 1);
+      }
+    }
+    .slick-prev {
+      right: 120px;
+      &::before {
+        content: url("../../public/Slider_arrow-left.svg");
+      }
+    }
+    .slick-next {
+      right: 60px;
+      &::before {
+        content: url("../../public/Slider_arrow-right.svg");
+      }
+    }
+    .slick-list {
+      overflow-x: hidden;
+    }
+  }
+}
+.SliderWrap__two-slide {
+  .slick-list {
+    max-width: 700px;
+  }
+}

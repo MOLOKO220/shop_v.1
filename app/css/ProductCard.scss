@@ -1,0 +1,161 @@
+.ProductCard {
+  height: 524px;
+  width: 290px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    > div {
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 62px;
+      > div {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        height: 28px;
+        width: 114px;
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        background: rgba(97, 140, 120, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    > img {
+      cursor: pointer;
+      transition: 300ms;
+      &:hover {
+        transform: scale(1.4);
+      }
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+  > main {
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px !important;
+    > img {
+      max-width: 176px;
+      min-width: 176px;
+      max-height: 240px;
+      min-height: 240px;
+    }
+    > main {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 20px;
+      color: black;
+      font-family: "Ubuntu", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > h5 {
+        font-size: 18px;
+        font-weight: 400;
+        height: 40px;
+      }
+      .ProductCard_favorite_wrap {
+        display: flex;
+        align-items: center;
+        > img {
+          cursor: pointer;
+        }
+        > p {
+          margin-left: 10px;
+          color: gray;
+        }
+      }
+    }
+  }
+  > footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      > a {
+        height: 30px;
+        width: 110px;
+        color: gray;
+        border: solid 2px gray;
+        font-family: "Ubuntu", sans-serif;
+        background: none;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 3px;
+        transition: 300ms;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          border: solid 2px #618c78;
+          color: #618c78;
+        }
+        &:active {
+          transition: 200ms;
+          transform: scale(0.9);
+        }
+      }
+      > div {
+        width: 40%;
+        > p {
+          color: gray;
+          margin-bottom: 7px;
+        }
+        .ProductCard__price {
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+    }
+    .ProductCard__discount-price {
+      display: flex;
+      width: 140px;
+      justify-content: space-evenly;
+      > div {
+        width: 70px;
+        font-family: "Ubuntu", sans-serif;
+        > p:nth-child(1) {
+          color: gray;
+        }
+        > p:nth-child(2) {
+          color: #618c78;
+          margin-top: 3px;
+        }
+        &:nth-child(1) {
+          //
+          > p:nth-child(1) {
+            color: gray;
+          }
+          > p:nth-child(2) {
+            color: gray;
+            margin-top: 3px;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}
